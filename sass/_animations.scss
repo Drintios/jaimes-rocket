@@ -1,0 +1,35 @@
+@keyframes moon {
+  0% {
+    opacity: .95;
+  }
+  50% {
+    opacity: .8;
+  }
+  100% {
+    opacity: .95;
+  }
+}
+
+@keyframes stars {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

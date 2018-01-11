@@ -1,0 +1,104 @@
+.launch-pad,
+.rocket {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.launch-pad {
+  position: absolute;
+  z-index: 2;
+  width: 27%;
+
+  .lights {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: calc(50% - 5px);
+    left: calc(50% - 25px);
+    transform: translateX(-50%);
+    bottom: 24%;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3px;
+      height: 3px;
+      background: #ff002d;
+      border-radius: 50%;
+      animation-name: blink;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      margin-right: 16.5%;
+
+      &:nth-child(3) {
+        margin-right: 14%;
+        margin-left: 3%;
+      }
+
+      &:nth-child(5) {
+        margin-top: -8px;
+        margin-left: auto;
+        margin-right: 5%;
+      }
+
+      &::before {
+        content: '';
+        background: white;
+        border-radius: 50%;
+        width: 1px;
+        height: 1px;
+        display: block;
+      }
+    }
+  }
+}
+
+.galaxy-left,
+.galaxy-right {
+  position: absolute;
+}
+
+.galaxy-left {
+  left: 0;
+  top: 15%;
+  width: 24%;
+
+  .stars {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.galaxy-right {
+  right: 0;
+  top: 40%;
+  width: 22%;
+  animation-name: stars;
+  animation-duration: 10s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+.star {
+  position: absolute;
+  top: 30px;
+  left: 11px;
+  width: 3%;
+  animation-name: stars;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.moon {
+  position: absolute;
+  top: 30px;
+  right: 20%;
+  width: 11%;
+  animation-name: moon;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}

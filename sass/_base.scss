@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('/fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadProBold';
+  src: url('/fonts/MyriadPro-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  font-family: 'MyriadPro';
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'MyriadProBold';
+}
+
+strong {
+  font-family: 'MyriadProBold';
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

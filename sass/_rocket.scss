@@ -1,0 +1,44 @@
+.rocket {
+  position: fixed;
+  bottom: 200px;
+  transition: bottom 1.25s;
+  z-index: 3;
+  width: 13%;
+
+  &.transition {
+    bottom: 0;
+  }
+
+  .lights {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 7%;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3px;
+      height: 3px;
+      background: #ff002d;
+      border-radius: 50%;
+      animation-name: blink;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+
+      &::before {
+        content: '';
+        background: white;
+        border-radius: 50%;
+        width: 1px;
+        height: 1px;
+        display: block;
+      }
+    }
+  }
+}
