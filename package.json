@@ -4,6 +4,7 @@
   "description": "Jaime Rocket parallax",
   "main": "gulpfile.js",
   "scripts": {
+    "start": "gulp run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
