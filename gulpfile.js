@@ -75,6 +75,10 @@ gulp.task('watch', function() {
 
 gulp.task('run', ['compile-css'], function() {
     browserSync.init({
+        port: 5000,
+        ui: {
+          port: 5001
+        },
         server: {
             baseDir: "./",
             index: "index.html",
