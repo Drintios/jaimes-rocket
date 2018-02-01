@@ -102,3 +102,16 @@
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
+
+.earth {
+  bottom: -30%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 50%;
+  transition: bottom .1s, width 2s;
+
+  &.transition {
+    width: 60%;
+  }
+}

@@ -1,6 +1,7 @@
 $(document).ready(function () {
   // Reversed scrolling.
   $(document).scroll(function () {
+    var $earth = $('.earth');
     var top = $(this).scrollTop();
     var scrolledPercentage = (top / $(window).height()) * 100;
     $('.content').css({'bottom': '-' + top + 'px'});
@@ -10,6 +11,20 @@ $(document).ready(function () {
     }
     else {
       $('.rocket').removeClass('transition');
+    }
+
+    if (($earth.offset().top + $earth.height()  - top) > $(window).height()) {
+      $earth.css('bottom', $earth.offset().top - top);
+      if ($(document).height() - $(window).height() > top - 300) {
+        $earth.addClass('transition');
+      }
+      else {
+        $earth.removeClass('transition');
+      }
+    }
+    else {
+      $earth.css('bottom', '');
+      $earth.removeClass('transition');
     }
   });
 
