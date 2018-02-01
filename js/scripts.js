@@ -5,13 +5,11 @@ $(document).ready(function () {
     var scrolledPercentage = (top / $(window).height()) * 100;
     $('.content').css({'bottom': '-' + top + 'px'});
 
-    if (top > 200 && top < 300) {
-      $('.rocket').css('bottom', 200 - (top - 200));
-    } else if (top >= 300) {
-      $('.rocket').css('bottom', 0);
+    if (top > 200) {
+      $('.rocket').addClass('transition');
     }
     else {
-      $('.rocket').css('bottom', '');
+      $('.rocket').removeClass('transition');
     }
   });
 
@@ -29,6 +27,6 @@ $(document).ready(function () {
     }
   }
 
-  randomStars(50);
+  randomStars(100);
 
 });

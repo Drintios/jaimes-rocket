@@ -16,7 +16,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  height: 200vh;
+  height: 1000vh;
   font-family: 'MyriadPro';
 }
 
@@ -34,4 +34,11 @@ strong {
 img {
   width: 100%;
   height: auto;
+}
+
+.santander.logo {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  width: 15%;
 }
